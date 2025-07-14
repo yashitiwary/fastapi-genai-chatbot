@@ -9,9 +9,10 @@ load_dotenv()
 router = APIRouter()
 
 client = openai.OpenAI(
-    api_key=os.getenv("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"),
+    api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1"
 )
+
 
 class ChatInput(BaseModel):
     message: str
