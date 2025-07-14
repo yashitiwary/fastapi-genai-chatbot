@@ -31,3 +31,4 @@ async def chat(chat_input: ChatInput):
     except Exception as e:
         print("❌ ERROR:", str(e))
         return {"response": f"Error: {str(e)}"}
+print("🔐 OpenRouter API Key Loaded:", os.getenv("OPENROUTER_API_KEY"))
